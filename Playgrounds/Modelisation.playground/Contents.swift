@@ -5,13 +5,14 @@ enum CompassPoint {
     case west
 }
 
-struct City {
+struct City: Equatable {
 
     let name: String
     var numberOfInhanbitants: Int
     var area: Double
     let isMajorCity: Bool
     let region: CompassPoint
+    let suburbs: Array<String> = []
 }
 
 class Town {
@@ -47,7 +48,7 @@ anotherCity.numberOfInhanbitants = 100
 //anotherCity.name = "Lille"
 let lille = Town(name: "Lille", isMajor: false, number: 100)
 
-var paris2 = City(name: "Paris", numberOfInhanbitants: 2_000_000, area: 545.3, isMajorCity: true)
+var paris2 = City(name: "Paris", numberOfInhanbitants: 2_000_000, area: 545.3, isMajorCity: true, region: .north)
 var newParis = paris2
 newParis.numberOfInhanbitants = 1_000_000
 
@@ -64,3 +65,9 @@ newParis.numberOfInhanbitants
 lyon.numberOfInhanbitants
 //newLyon : 1_000_000
 newLyon.numberOfInhanbitants
+
+var villes = ["Paris","Bordeaux","Lyon","Marseille"]
+//villes.insert("")
+
+var capitales = ["France": "Paris"]
+capitales["Portugal"]
