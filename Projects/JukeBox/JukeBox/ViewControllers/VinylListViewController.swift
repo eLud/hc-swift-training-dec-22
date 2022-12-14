@@ -22,15 +22,22 @@ class VinylListViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
+
+        if segue.identifier == "showForm" {
+            let destination = segue.destination as? ViewController
+            destination?.library = library
+        } else {
+            
+        }
+
         // Pass the selected object to the new view controller.
+//        destination.vinyl = theSelectedVinyl
     }
-    */
 
 }
 

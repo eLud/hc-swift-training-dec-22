@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myPickerView: UIPickerView!
 
+    var library: Library?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.)
@@ -18,6 +20,7 @@ class ViewController: UIViewController {
         myPickerView.delegate = self
         myPickerView.dataSource = self
     }
+
 }
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
