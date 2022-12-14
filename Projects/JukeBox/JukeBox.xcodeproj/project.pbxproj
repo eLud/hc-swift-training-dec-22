@@ -15,6 +15,8 @@
 		33ED3F0029488F460082EB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33ED3EFE29488F460082EB12 /* LaunchScreen.storyboard */; };
 		33ED3F0829488FFB0082EB12 /* Vinyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED3F0729488FFB0082EB12 /* Vinyl.swift */; };
 		33ED3F0A294890030082EB12 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED3F09294890030082EB12 /* Library.swift */; };
+		33ED3F0D2949C5570082EB12 /* String+Reversed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED3F0C2949C5570082EB12 /* String+Reversed.swift */; };
+		33ED3F0F2949D0040082EB12 /* VinylListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED3F0E2949D0040082EB12 /* VinylListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		33ED3F0129488F460082EB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33ED3F0729488FFB0082EB12 /* Vinyl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinyl.swift; sourceTree = "<group>"; };
 		33ED3F09294890030082EB12 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		33ED3F0C2949C5570082EB12 /* String+Reversed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Reversed.swift"; sourceTree = "<group>"; };
+		33ED3F0E2949D0040082EB12 /* VinylListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +64,10 @@
 		33ED3EF229488F450082EB12 /* JukeBox */ = {
 			isa = PBXGroup;
 			children = (
-				33ED3F0B294890390082EB12 /* Models */,
 				33ED3EF329488F450082EB12 /* AppDelegate.swift */,
 				33ED3EF529488F450082EB12 /* SceneDelegate.swift */,
-				33ED3EF729488F450082EB12 /* ViewController.swift */,
+				33ED3F0B294890390082EB12 /* Models */,
+				33ED3F102949D0320082EB12 /* ViewControllers */,
 				33ED3EF929488F450082EB12 /* Main.storyboard */,
 				33ED3EFC29488F460082EB12 /* Assets.xcassets */,
 				33ED3EFE29488F460082EB12 /* LaunchScreen.storyboard */,
@@ -77,8 +81,18 @@
 			children = (
 				33ED3F0729488FFB0082EB12 /* Vinyl.swift */,
 				33ED3F09294890030082EB12 /* Library.swift */,
+				33ED3F0C2949C5570082EB12 /* String+Reversed.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		33ED3F102949D0320082EB12 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33ED3EF729488F450082EB12 /* ViewController.swift */,
+				33ED3F0E2949D0040082EB12 /* VinylListViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33ED3F0F2949D0040082EB12 /* VinylListViewController.swift in Sources */,
 				33ED3F0829488FFB0082EB12 /* Vinyl.swift in Sources */,
 				33ED3EF829488F450082EB12 /* ViewController.swift in Sources */,
+				33ED3F0D2949C5570082EB12 /* String+Reversed.swift in Sources */,
 				33ED3F0A294890030082EB12 /* Library.swift in Sources */,
 				33ED3EF429488F450082EB12 /* AppDelegate.swift in Sources */,
 				33ED3EF629488F450082EB12 /* SceneDelegate.swift in Sources */,
