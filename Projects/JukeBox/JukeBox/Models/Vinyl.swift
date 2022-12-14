@@ -34,10 +34,14 @@ struct CompactDisc: MusicHolder {
 }
 
 struct Vinyl: Equatable, MusicHolder {
-    enum Speed {
-        case rpm33
-        case rpm45
-        case rpm78
+    enum Speed: Int, CaseIterable {
+        case rpm33 = 33
+        case rpm45 = 45
+        case rpm78 = 78
+
+        var title: String {
+            "\(rawValue) trs"
+        }
     }
 
     let albumName: String

@@ -16,13 +16,21 @@ class Library {
 extension Library {
     func add(_ vinyl: Vinyl) {
         vinyls.append(vinyl)
+        postDidChangeNotification()
     }
 
     func remove(_ vinyl: Vinyl) -> Vinyl? {
         if let index = vinyls.firstIndex(of: vinyl) {
-            return vinyls.remove(at: index)
+            let removed = vinyls.remove(at: index)
+            postDidChangeNotification()
+            return removed
         }
         return nil
+    }
+
+    private func postDidChangeNotification() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.post(name: NSNotification.Name("LibraryDidChange"), object: self)
     }
 }
 

@@ -11,16 +11,44 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myPickerView: UIPickerView!
 
+    @IBOutlet weak var speedSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var albumNameTextField: UITextField!
+    @IBOutlet weak var isScratchedSwitch: UISwitch!
+
     var library: Library?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.)
-
         myPickerView.delegate = self
         myPickerView.dataSource = self
+
+        configureUI()
     }
 
+    private func configureUI() {
+        configureSegmentedControl()
+    }
+
+    private func configureSegmentedControl() {
+        speedSegmentedControl.removeAllSegments()
+
+        let allSpeeds = Vinyl.Speed.allCases
+        for speed in allSpeeds {
+            speedSegmentedControl.insertSegment(withTitle: speed.title, at: speedSegmentedControl.numberOfSegments, animated: false)
+        }
+        speedSegmentedControl.selectedSegmentIndex = 0
+    }
+
+    @IBAction func saveVinyl(_ sender: UIButton) {
+        guard let name = albumNameTextField.text, !name.isEmpty else { return }
+        let scratched = isScratchedSwitch.isOn
+        let allSpeeds = Vinyl.Speed.allCases
+        let speed = allSpeeds[speedSegmentedControl.selectedSegmentIndex]
+
+        let vinyl = Vinyl(albumName: name, artist: "unknown", releaseDate: Date.now, numberInSerie: nil, titles: [], scratched: scratched, speed: speed)
+        library?.add(vinyl)
+        dismiss(animated: true)
+    }
 }
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {

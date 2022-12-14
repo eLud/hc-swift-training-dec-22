@@ -19,6 +19,11 @@ class VinylListViewController: UIViewController {
         tableView.delegate = self
 
         library.add(Vinyl(albumName: "Vinyl 1", artist: "Artiste", releaseDate: .now, numberInSerie: nil, titles: [], scratched: false, speed: .rpm33))
+
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(forName: NSNotification.Name("LibraryDidChange"), object: library, queue: OperationQueue.main) { _ in
+            self.tableView.reloadData()
+        }
     }
     
 
@@ -31,12 +36,15 @@ class VinylListViewController: UIViewController {
         if segue.identifier == "showForm" {
             let destination = segue.destination as? ViewController
             destination?.library = library
-        } else {
-            
-        }
+        } else if segue.identifier == "showDetails" {
+            let destination = segue.destination as? VinylDetailsViewController
 
-        // Pass the selected object to the new view controller.
-//        destination.vinyl = theSelectedVinyl
+//            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            guard let sender = sender, let cell = sender as? UITableViewCell else { return }
+            guard let indexPath = tableView.indexPath(for: cell) else { return }
+            destination?.vinyl = library.vinyls[indexPath.row]
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 
 }
