@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct VinylListView: View {
-
+    
     @ObservedObject var library: Library
     @State private var showForm = false
-
+    
     var body: some View {
-        NavigationView {
-            List {
-                Section {
+        List {
+            Section {
+                if library.vinyls.isEmpty {
+                    Button("Add new vinyls to start") {
+                        showForm = true
+                    }
+                } else {
                     ForEach(library.vinyls) { vinyl in
-                        NavigationLink(destination: Text("OI")) {
+                        NavigationLink(destination: Text(vinyl.albumName).padding()) {
                             Text(vinyl.albumName)
                         }
                     }.onDelete { indexSet in
@@ -27,18 +31,19 @@ struct VinylListView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showForm, content: {
+        }
+        .navigationTitle("Vinyls")
+        .sheet(isPresented: $showForm, content: {
+            NavigationStack {
                 ContentView(library: library)
-            })
-            .toolbar {
-                ToolbarItem {
-                    Button("Add") {
-                        showForm = true
-//                        withAnimation {
-//                            library.add(Vinyl(albumName: "Vinyl", artist: "", releaseDate: .now, numberInSerie: nil, titles: [], scratched: true, speed: .rpm78))
-//                        }
-                    }
-                }
+                    .navigationTitle("Add")
+            }
+        })
+        .toolbar {
+            ToolbarItem {
+                Button("Add", role: .destructive) {
+                    showForm = true
+                }.foregroundColor(.red)
             }
         }
     }

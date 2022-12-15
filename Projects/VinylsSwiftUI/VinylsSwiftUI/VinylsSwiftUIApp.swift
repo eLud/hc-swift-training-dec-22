@@ -15,15 +15,19 @@ struct VinylsSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                ContentView(library: library)
-                    .tabItem {
-                        Label("Vinyls", systemImage: "opticaldisc")
-                    }
-                Text("Shop")
+                NavigationView {
+                    VinylListView(library: library)
+                }
+                .tabItem {
+                    Label("Vinyls", systemImage: "opticaldisc")
+                }
+                ShopView()
                     .tabItem {
                         Label("Shop", systemImage: "cart")
                     }
+                    .badge("New")
             }
+            .environmentObject(library)
         }
     }
 }

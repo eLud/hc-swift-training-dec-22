@@ -20,6 +20,9 @@ struct ContentView: View {
 
     @ObservedObject var library: Library
 
+    // iOS 15+
+    @Environment(\.dismiss) var dismiss
+
     var body: some View {
         Form {
             Picker("Disk rotation speed", selection: $diskSpeed) {
@@ -51,6 +54,7 @@ struct ContentView: View {
                 Button("Save") {
                     let vinyl = Vinyl(albumName: albumName, artist: artistName, releaseDate: releaseDate, numberInSerie: nil, titles: [], scratched: scratched, speed: diskSpeed)
                     library.add(vinyl)
+                    dismiss()
                 }
                 LibraryInfo(lib: library)
             }
