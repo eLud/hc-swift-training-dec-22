@@ -34,13 +34,17 @@ struct CompactDisc: MusicHolder {
 }
 
 struct Vinyl: Equatable, MusicHolder {
-    enum Speed: Int, CaseIterable {
+    enum Speed: Int, CaseIterable, Identifiable {
         case rpm33 = 33
         case rpm45 = 45
         case rpm78 = 78
 
         var title: String {
             "\(rawValue) trs"
+        }
+
+        var id: Speed {
+            self
         }
     }
 
