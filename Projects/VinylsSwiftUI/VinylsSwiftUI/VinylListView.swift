@@ -16,7 +16,7 @@ struct VinylListView: View {
         NavigationView {
             List {
                 Section {
-                    ForEach($library.vinyls) { $vinyl in
+                    ForEach(library.vinyls) { vinyl in
                         NavigationLink(destination: Text("OI")) {
                             Text(vinyl.albumName)
                         }

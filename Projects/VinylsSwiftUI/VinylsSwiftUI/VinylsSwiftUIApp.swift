@@ -14,7 +14,16 @@ struct VinylsSwiftUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(library: library)
+            TabView {
+                ContentView(library: library)
+                    .tabItem {
+                        Label("Vinyls", systemImage: "opticaldisc")
+                    }
+                Text("Shop")
+                    .tabItem {
+                        Label("Shop", systemImage: "cart")
+                    }
+            }
         }
     }
 }
