@@ -33,7 +33,8 @@ struct CompactDisc: MusicHolder {
     var scratched: Bool
 }
 
-struct Vinyl: Equatable, MusicHolder {
+struct Vinyl: Equatable, MusicHolder, Identifiable {
+
     enum Speed: Int, CaseIterable, Identifiable {
         case rpm33 = 33
         case rpm45 = 45
@@ -59,6 +60,9 @@ struct Vinyl: Equatable, MusicHolder {
     func play() {
 
     }
+
+    let id: UUID = UUID()
+
 // Auto implemented by we are in a struct with only Equatable properties
 //    static func == (lhs: Vinyl, rhs: Vinyl) -> Bool {
 //        lhs.albumName == rhs.albumName &&

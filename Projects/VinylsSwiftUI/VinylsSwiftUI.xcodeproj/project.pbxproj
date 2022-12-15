@@ -13,6 +13,7 @@
 		334BE316294B3573005AA24B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334BE315294B3573005AA24B /* Preview Assets.xcassets */; };
 		334BE31F294B37BB005AA24B /* Vinyl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334BE31D294B37BB005AA24B /* Vinyl.swift */; };
 		334BE320294B37BB005AA24B /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334BE31E294B37BB005AA24B /* Library.swift */; };
+		334BE322294B600E005AA24B /* VinylListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334BE321294B600E005AA24B /* VinylListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		334BE315294B3573005AA24B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		334BE31D294B37BB005AA24B /* Vinyl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vinyl.swift; path = ../../../JukeBox/JukeBox/Models/Vinyl.swift; sourceTree = "<group>"; };
 		334BE31E294B37BB005AA24B /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Library.swift; path = ../../../JukeBox/JukeBox/Models/Library.swift; sourceTree = "<group>"; };
+		334BE321294B600E005AA24B /* VinylListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				334BE31C294B3799005AA24B /* Models */,
 				334BE30D294B3572005AA24B /* VinylsSwiftUIApp.swift */,
+				334BE321294B600E005AA24B /* VinylListView.swift */,
 				334BE30F294B3572005AA24B /* ContentView.swift */,
 				334BE311294B3573005AA24B /* Assets.xcassets */,
 				334BE313294B3573005AA24B /* VinylsSwiftUI.entitlements */,
@@ -157,6 +160,7 @@
 				334BE320294B37BB005AA24B /* Library.swift in Sources */,
 				334BE30E294B3572005AA24B /* VinylsSwiftUIApp.swift in Sources */,
 				334BE31F294B37BB005AA24B /* Vinyl.swift in Sources */,
+				334BE322294B600E005AA24B /* VinylListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

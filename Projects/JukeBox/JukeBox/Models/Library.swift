@@ -7,31 +7,31 @@
 
 import Foundation
 
-class Library {
+class Library: ObservableObject {
 
-    var vinyls: [Vinyl] = []
+    @Published var vinyls: [Vinyl] = []
+
+    static func demoLibrary() -> Library {
+        let lib = Library()
+        lib.add(Vinyl(albumName: "Demo Vinyl", artist: "", releaseDate: .now, numberInSerie: nil, titles: [], scratched: true, speed: .rpm45))
+        return lib
+    }
 }
 
 // MARK: - Data management
 extension Library {
     func add(_ vinyl: Vinyl) {
         vinyls.append(vinyl)
-        postDidChangeNotification()
     }
 
     func remove(_ vinyl: Vinyl) -> Vinyl? {
         if let index = vinyls.firstIndex(of: vinyl) {
             let removed = vinyls.remove(at: index)
-            postDidChangeNotification()
             return removed
         }
         return nil
     }
 
-    private func postDidChangeNotification() {
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.post(name: NSNotification.Name("LibraryDidChange"), object: self)
-    }
 }
 
 extension Library: Equatable {
