@@ -15,7 +15,27 @@
 		334BE320294B37BB005AA24B /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334BE31E294B37BB005AA24B /* Library.swift */; };
 		334BE322294B600E005AA24B /* VinylListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334BE321294B600E005AA24B /* VinylListView.swift */; };
 		334BE324294B8182005AA24B /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334BE323294B8182005AA24B /* ShopView.swift */; };
+		33E2EBE4294CADB700101159 /* VinylsSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2EBE3294CADB700101159 /* VinylsSwiftUIUITests.swift */; };
+		33E2EBE6294CADB700101159 /* VinylsSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2EBE5294CADB700101159 /* VinylsSwiftUIUITestsLaunchTests.swift */; };
+		33E2EBF3294CB45B00101159 /* VinylsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2EBF2294CB45B00101159 /* VinylsSwiftUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33E2EBE7294CADB700101159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 334BE302294B3572005AA24B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 334BE309294B3572005AA24B;
+			remoteInfo = VinylsSwiftUI;
+		};
+		33E2EBF4294CB45B00101159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 334BE302294B3572005AA24B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 334BE309294B3572005AA24B;
+			remoteInfo = VinylsSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		334BE30A294B3572005AA24B /* VinylsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinylsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +48,29 @@
 		334BE31E294B37BB005AA24B /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Library.swift; path = ../../../JukeBox/JukeBox/Models/Library.swift; sourceTree = "<group>"; };
 		334BE321294B600E005AA24B /* VinylListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylListView.swift; sourceTree = "<group>"; };
 		334BE323294B8182005AA24B /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		33E2EBE1294CADB700101159 /* VinylsSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinylsSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E2EBE3294CADB700101159 /* VinylsSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylsSwiftUIUITests.swift; sourceTree = "<group>"; };
+		33E2EBE5294CADB700101159 /* VinylsSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylsSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33E2EBF0294CB45B00101159 /* VinylsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinylsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E2EBF2294CB45B00101159 /* VinylsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylsSwiftUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		334BE307294B3572005AA24B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E2EBDE294CADB700101159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E2EBED294CB45B00101159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				334BE30C294B3572005AA24B /* VinylsSwiftUI */,
+				33E2EBE2294CADB700101159 /* VinylsSwiftUIUITests */,
+				33E2EBF1294CB45B00101159 /* VinylsSwiftUITests */,
 				334BE30B294B3572005AA24B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				334BE30A294B3572005AA24B /* VinylsSwiftUI.app */,
+				33E2EBE1294CADB700101159 /* VinylsSwiftUIUITests.xctest */,
+				33E2EBF0294CB45B00101159 /* VinylsSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +132,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		33E2EBE2294CADB700101159 /* VinylsSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33E2EBE3294CADB700101159 /* VinylsSwiftUIUITests.swift */,
+				33E2EBE5294CADB700101159 /* VinylsSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = VinylsSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		33E2EBF1294CB45B00101159 /* VinylsSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33E2EBF2294CB45B00101159 /* VinylsSwiftUITests.swift */,
+			);
+			path = VinylsSwiftUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +169,42 @@
 			productReference = 334BE30A294B3572005AA24B /* VinylsSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		33E2EBE0294CADB700101159 /* VinylsSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33E2EBEB294CADB700101159 /* Build configuration list for PBXNativeTarget "VinylsSwiftUIUITests" */;
+			buildPhases = (
+				33E2EBDD294CADB700101159 /* Sources */,
+				33E2EBDE294CADB700101159 /* Frameworks */,
+				33E2EBDF294CADB700101159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33E2EBE8294CADB700101159 /* PBXTargetDependency */,
+			);
+			name = VinylsSwiftUIUITests;
+			productName = VinylsSwiftUIUITests;
+			productReference = 33E2EBE1294CADB700101159 /* VinylsSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		33E2EBEF294CB45B00101159 /* VinylsSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33E2EBF6294CB45B00101159 /* Build configuration list for PBXNativeTarget "VinylsSwiftUITests" */;
+			buildPhases = (
+				33E2EBEC294CB45B00101159 /* Sources */,
+				33E2EBED294CB45B00101159 /* Frameworks */,
+				33E2EBEE294CB45B00101159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33E2EBF5294CB45B00101159 /* PBXTargetDependency */,
+			);
+			name = VinylsSwiftUITests;
+			productName = VinylsSwiftUITests;
+			productReference = 33E2EBF0294CB45B00101159 /* VinylsSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -121,6 +217,14 @@
 				TargetAttributes = {
 					334BE309294B3572005AA24B = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					33E2EBE0294CADB700101159 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 334BE309294B3572005AA24B;
+					};
+					33E2EBEF294CB45B00101159 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 334BE309294B3572005AA24B;
 					};
 				};
 			};
@@ -138,6 +242,8 @@
 			projectRoot = "";
 			targets = (
 				334BE309294B3572005AA24B /* VinylsSwiftUI */,
+				33E2EBE0294CADB700101159 /* VinylsSwiftUIUITests */,
+				33E2EBEF294CB45B00101159 /* VinylsSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +255,20 @@
 			files = (
 				334BE316294B3573005AA24B /* Preview Assets.xcassets in Resources */,
 				334BE312294B3573005AA24B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E2EBDF294CADB700101159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E2EBEE294CB45B00101159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +288,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33E2EBDD294CADB700101159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33E2EBE4294CADB700101159 /* VinylsSwiftUIUITests.swift in Sources */,
+				33E2EBE6294CADB700101159 /* VinylsSwiftUIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E2EBEC294CB45B00101159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33E2EBF3294CB45B00101159 /* VinylsSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33E2EBE8294CADB700101159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 334BE309294B3572005AA24B /* VinylsSwiftUI */;
+			targetProxy = 33E2EBE7294CADB700101159 /* PBXContainerItemProxy */;
+		};
+		33E2EBF5294CB45B00101159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 334BE309294B3572005AA24B /* VinylsSwiftUI */;
+			targetProxy = 33E2EBF4294CB45B00101159 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		334BE317294B3573005AA24B /* Debug */ = {
@@ -358,6 +508,86 @@
 			};
 			name = Release;
 		};
+		33E2EBE9294CADB700101159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.humancoders.training.ios.VinylsSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VinylsSwiftUI;
+			};
+			name = Debug;
+		};
+		33E2EBEA294CADB700101159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.humancoders.training.ios.VinylsSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VinylsSwiftUI;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33E2EBF7294CB45B00101159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.humancoders.training.ios.VinylsSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VinylsSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VinylsSwiftUI";
+			};
+			name = Debug;
+		};
+		33E2EBF8294CB45B00101159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.humancoders.training.ios.VinylsSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VinylsSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VinylsSwiftUI";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +605,24 @@
 			buildConfigurations = (
 				334BE31A294B3573005AA24B /* Debug */,
 				334BE31B294B3573005AA24B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33E2EBEB294CADB700101159 /* Build configuration list for PBXNativeTarget "VinylsSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E2EBE9294CADB700101159 /* Debug */,
+				33E2EBEA294CADB700101159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33E2EBF6294CB45B00101159 /* Build configuration list for PBXNativeTarget "VinylsSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E2EBF7294CB45B00101159 /* Debug */,
+				33E2EBF8294CB45B00101159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
