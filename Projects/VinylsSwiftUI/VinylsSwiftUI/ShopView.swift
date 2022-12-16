@@ -11,6 +11,7 @@ struct ShopView: View {
 
     @EnvironmentObject private var library: Library
     @State private var image: Image?
+    @State var url = URL(string: "https://www.apple.com")!
 
     var body: some View {
         VStack {
@@ -22,11 +23,15 @@ struct ShopView: View {
                     await loadData()
                 }
             }
+            Button("Navigate") {
+                url = URL(string: "http://www.microsoft.com")!
+            }
             if let image {
                 image
                     .resizable()
                     .frame(width: 200, height: 200)
             }
+            WebView(url: url)
         }
     }
 

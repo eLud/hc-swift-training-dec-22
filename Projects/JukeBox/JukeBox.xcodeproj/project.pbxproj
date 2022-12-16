@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		334BE2E3294A0E66005AA24B /* ShopFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334BE2E2294A0E66005AA24B /* ShopFlow.storyboard */; };
 		334BE2E5294A2288005AA24B /* VinylDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334BE2E4294A2288005AA24B /* VinylDetailsViewController.swift */; };
+		33E2EBFA294CBA5B00101159 /* AVeryNiceSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2EBF9294CBA5B00101159 /* AVeryNiceSwiftUIView.swift */; };
 		33ED3EF429488F450082EB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED3EF329488F450082EB12 /* AppDelegate.swift */; };
 		33ED3EF629488F450082EB12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED3EF529488F450082EB12 /* SceneDelegate.swift */; };
 		33ED3EF829488F450082EB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ED3EF729488F450082EB12 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		334BE2E2294A0E66005AA24B /* ShopFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopFlow.storyboard; sourceTree = "<group>"; };
 		334BE2E4294A2288005AA24B /* VinylDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylDetailsViewController.swift; sourceTree = "<group>"; };
+		33E2EBF9294CBA5B00101159 /* AVeryNiceSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVeryNiceSwiftUIView.swift; sourceTree = "<group>"; };
 		33ED3EF029488F450082EB12 /* JukeBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JukeBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33ED3EF329488F450082EB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33ED3EF529488F450082EB12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				33ED3F0E2949D0040082EB12 /* VinylListViewController.swift */,
 				334BE2E4294A2288005AA24B /* VinylDetailsViewController.swift */,
 				334BE2E2294A0E66005AA24B /* ShopFlow.storyboard */,
+				33E2EBF9294CBA5B00101159 /* AVeryNiceSwiftUIView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				33ED3F0A294890030082EB12 /* Library.swift in Sources */,
 				33ED3EF429488F450082EB12 /* AppDelegate.swift in Sources */,
 				33ED3EF629488F450082EB12 /* SceneDelegate.swift in Sources */,
+				33E2EBFA294CBA5B00101159 /* AVeryNiceSwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

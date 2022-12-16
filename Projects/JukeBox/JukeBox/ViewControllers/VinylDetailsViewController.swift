@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class VinylDetailsViewController: UIViewController {
 
@@ -17,6 +18,20 @@ class VinylDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         configureUI()
+    }
+
+    @IBAction func showSwiftUIComponent(_ sender: Any) {
+
+        let controller = UIHostingController(rootView: AVeryNiceSwiftUIView())
+        let swiftUIview = controller.view
+
+        if let swiftUIview {
+            view.addSubview(swiftUIview)
+            swiftUIview.translatesAutoresizingMaskIntoConstraints = false
+            swiftUIview.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+            swiftUIview.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        }
+//        present(controller, animated: true)
     }
 
     private func configureUI() {

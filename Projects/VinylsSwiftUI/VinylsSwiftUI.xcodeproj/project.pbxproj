@@ -18,6 +18,7 @@
 		33E2EBE4294CADB700101159 /* VinylsSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2EBE3294CADB700101159 /* VinylsSwiftUIUITests.swift */; };
 		33E2EBE6294CADB700101159 /* VinylsSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2EBE5294CADB700101159 /* VinylsSwiftUIUITestsLaunchTests.swift */; };
 		33E2EBF3294CB45B00101159 /* VinylsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2EBF2294CB45B00101159 /* VinylsSwiftUITests.swift */; };
+		33E2EBFC294CBF7100101159 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2EBFB294CBF7100101159 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		33E2EBE5294CADB700101159 /* VinylsSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylsSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33E2EBF0294CB45B00101159 /* VinylsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinylsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E2EBF2294CB45B00101159 /* VinylsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinylsSwiftUITests.swift; sourceTree = "<group>"; };
+		33E2EBFB294CBF7100101159 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				334BE321294B600E005AA24B /* VinylListView.swift */,
 				334BE30F294B3572005AA24B /* ContentView.swift */,
 				334BE323294B8182005AA24B /* ShopView.swift */,
+				33E2EBFB294CBF7100101159 /* WebView.swift */,
 				334BE311294B3573005AA24B /* Assets.xcassets */,
 				334BE313294B3573005AA24B /* VinylsSwiftUI.entitlements */,
 				334BE314294B3573005AA24B /* Preview Content */,
@@ -285,6 +288,7 @@
 				334BE30E294B3572005AA24B /* VinylsSwiftUIApp.swift in Sources */,
 				334BE31F294B37BB005AA24B /* Vinyl.swift in Sources */,
 				334BE322294B600E005AA24B /* VinylListView.swift in Sources */,
+				33E2EBFC294CBF7100101159 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
