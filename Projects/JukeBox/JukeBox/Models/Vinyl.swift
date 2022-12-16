@@ -33,9 +33,9 @@ struct CompactDisc: MusicHolder {
     var scratched: Bool
 }
 
-struct Vinyl: Equatable, MusicHolder, Identifiable {
+struct Vinyl: Equatable, MusicHolder, Identifiable, Codable {
 
-    enum Speed: Int, CaseIterable, Identifiable {
+    enum Speed: Int, CaseIterable, Identifiable, Codable {
         case rpm33 = 33
         case rpm45 = 45
         case rpm78 = 78

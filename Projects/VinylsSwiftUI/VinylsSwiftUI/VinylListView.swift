@@ -11,13 +11,20 @@ struct VinylListView: View {
     
     @ObservedObject var library: Library
     @State private var showForm = false
-    
+
+    @SceneStorage("switchValue") var switchValue: Bool = false
+    @AppStorage("firstName") var firstName: String = ""
+
     var body: some View {
         List {
             Section {
                 if library.vinyls.isEmpty {
-                    Button("Add new vinyls to start") {
-                        showForm = true
+                    VStack {
+                        Button("Add new vinyls to start") {
+                            showForm = true
+                        }
+                        Toggle("Persisted Toggle", isOn: $switchValue)
+                        TextField("FirstName", text: $firstName)
                     }
                 } else {
                     ForEach(library.vinyls) { vinyl in
@@ -44,6 +51,11 @@ struct VinylListView: View {
                 Button("Add", role: .destructive) {
                     showForm = true
                 }.foregroundColor(.red)
+            }
+            ToolbarItem {
+                Button("Save") {
+                    library.save()
+                }
             }
         }
     }
