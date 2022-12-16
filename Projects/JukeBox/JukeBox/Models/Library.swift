@@ -32,7 +32,7 @@ class Library: ObservableObject {
             let fileManager = FileManager.default
             if let url = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first {
                 print(url)
-                let fileURL = url.appending(component: "vinyls.json")
+                let fileURL = url.appendingPathComponent("vinyls.json")
                 try? data.write(to: fileURL)
             }
             return data
@@ -44,7 +44,7 @@ class Library: ObservableObject {
         let fileManager = FileManager.default
         guard let url = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
 
-        let fileURL = url.appending(component: "vinyls.json")
+        let fileURL = url.appendingPathComponent("vinyls.json")
         guard let data = try? Data(contentsOf: fileURL) else { return }
 
         let decoder = JSONDecoder()
