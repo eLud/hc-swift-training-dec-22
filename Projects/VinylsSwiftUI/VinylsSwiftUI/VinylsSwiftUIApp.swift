@@ -26,6 +26,10 @@ struct VinylsSwiftUIApp: App {
                         Label("Shop", systemImage: "cart")
                     }
                     .badge("New")
+                NearbyShopsView()
+                    .tabItem {
+                        Label("Physical shops", systemImage: "cart")
+                    }
             }
             .environmentObject(library)
         }
